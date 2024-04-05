@@ -24,7 +24,8 @@
     background-color: white;
 }
 .animated-nav-menu a:hover {
-    background-color: rgba(0, 200, 255, 0.5);
+    background-color: #00aaff;
+    color:white;
     transition: .5s; 
 }
 
