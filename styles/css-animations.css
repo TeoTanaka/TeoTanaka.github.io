@@ -25,7 +25,7 @@
 }
 .animated-nav-menu a:hover {
     background-color: rgba(0, 200, 255, 0.5);
-    transition-delay: .5s; 
+    transition: .5s; 
 }
 
 /* Task 3: Button Press Animation */
@@ -71,10 +71,16 @@
 .fading-gallery {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 .fading-gallery img {
     width: 100px;
     height: 100px;
     object-fit: cover;
+    opacity: 0.33;
+}
+.fading-gallery img:hover {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
 }
