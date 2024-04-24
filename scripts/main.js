@@ -19,6 +19,11 @@ for (let i =0; i<100; i++){
 }
 console.log(t);
 console.log("Test5")
-for (let i =0; i>10; i++) {
-    console.log(i);
+let j = 0;
+for (let i =0; i<10; i++) {
+    j = i;
+    for (let e = 1; e<i;e++){
+        j *=e
+    }
+    console.log(j);
 }
