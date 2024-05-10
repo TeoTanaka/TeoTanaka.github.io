@@ -82,6 +82,6 @@ console.log(arr4);
 
 
 
-
-
-
+Array.length //returns the length of the array (amount of objects in the array)
+Array.push(/*object*/) //adding a new object to the array
+Array.pop(/*object*/) //taking the last object from the array and returning it
