@@ -5,31 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/imageWheel.css" rel="stylesheet">!
 </head>
 
 <body>
-    <h1 class="important random">Teo's Website</h1>
-    <img src="goldengate.jpg" alt="The golden gate bridge with the Marin headlands" style="width : 80%; height: auto" />
-    <p><strong>Hello World</strong></p>
-    <h2>Links</h2>
-    <ul>
-        <li><a href="https://mail.google.com/"> Gmail</a></li>
-        <li><a href="https://tamdistrict.instructure.com/"> Canvas</a></li>
-    </ul>
-    <h3>Best views in SFO Bay Area ranked</h3>
-    <ol>
-        <li id="odd_text">Golden Gate</li>
-        <li class="random">Ring Mountain</li>
-        <li class="important">Point Reyes</li>
-    </ol>
-    <h4>About me</h4>
-    <a href="/aboutme.html">about me</a>
-        <p><em>that's it!</em></p>
+    <hgroup>
+        <h1>___'s Chairs</h1>
+        <em>
+            <p>___'s Premier Chairs</p>
+        </em>
+    </hgroup>
+    <div class="wheel">
+        <img class="left" src="https://placehold.co/300x200" alt="placeholder" />
+        <img class="center" src="https://placehold.co/300x200" alt="placeholder" />
+        <img class="right" src="https://placehold.co/300x200" alt="placeholder" />
+    </div>
+    <script>
+        const wheel = document.querySelector(".wheel");
+        setInterval(() => {
+            for (const child of wheel.children) {
+                if (child.classList.contains("left")) {
+                    child.classList.replace("left", "center");
+                }
+                else if (child.classList.contains("center")) {
+                    child.classList.replace("center", "right");
+                }
+                else if (child.classList.contains("right")) {
+                    child.classList.replace("right", "left");
+                }
+            }
+        }, 2000);
+    </script>
 </body>
-<script src="scripts/main.js"></script>
-<script src="scripts/arrays.js"></script>
-
-
 
 </html>

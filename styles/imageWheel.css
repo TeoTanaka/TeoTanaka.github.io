@@ -1,0 +1,43 @@
+.wheel {
+    border: 2px red solid;
+}
+
+.wheel > * {
+    display: none;
+    left: 0;
+}
+
+.wheel > .left,
+.wheel > .center,
+.wheel > .right {
+    display: initial;
+    position: absolute;
+}
+
+.wheel > .left {
+    animation: left 1s both;
+}
+
+.wheel > .center {
+    animation: center 1s both;
+}
+
+.wheel > .right {
+    animation: right 1s both;
+}
+
+@keyframes left {
+    to {
+        left: 0%;
+    }
+}
+@keyframes center {
+    to {
+        left: 50%;
+    }
+}
+@keyframes right {
+    to {
+        left: 100%;
+    }
+}
