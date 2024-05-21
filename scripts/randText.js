@@ -1,14 +1,25 @@
-let names = ['Mack','Burdock','Ester'];
+//assigning random names
+let names = ['Mack','Ester'];
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-let nameEl = document.createElement("p");
-nameEl.innerText = names[getRandomInt(names.length)];
+let randomName = names[getRandomInt(names.length)];
 
-randName.appendChild(nameEl);
+let randNameEls = document.querySelectorAll(".randName");
+for(const randNameEl of randNameEls){
+    randNameEl.innerText = randomName;
+}
 
-console.log(names[getRandomInt(names.length)]);
+//assigning random places
+let places = ['Marin','San Francisco'];
 
+let randomPlace = places[getRandomInt(places.length)];
+
+let randPlaceEls = document.querySelectorAll(".randPlace");
+for(const randPlaceEl of randPlaceEls){
+    randPlaceEl.innerText = randomPlace;
+}
+console.log(randomPlace);
 
 

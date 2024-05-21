@@ -27,16 +27,25 @@
 }
 
 @keyframes left {
+    from {
+        left: 100%;
+    }
     to {
         left: 0%;
     }
 }
 @keyframes center {
+    from {
+        left: 0%;
+    }
     to {
         left: 50%;
     }
 }
 @keyframes right {
+    from {
+        left: 50%;
+    }
     to {
         left: 100%;
     }
