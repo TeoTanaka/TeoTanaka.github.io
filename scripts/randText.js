@@ -1,5 +1,5 @@
 //assigning random names
-let names = ['Mack','Ester'];
+let names = ['Mack','Ester','Melvin','Goodyear'];
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
@@ -12,7 +12,7 @@ for(const randNameEl of randNameEls){
 }
 
 //assigning random places
-let places = ['Marin','San Francisco'];
+let places = ['Marin','San Francisco','Pluto','Tiburon','Palo Alto'];
 
 let randomPlace = places[getRandomInt(places.length)];
 
@@ -21,5 +21,16 @@ for(const randPlaceEl of randPlaceEls){
     randPlaceEl.innerText = randomPlace;
 }
 console.log(randomPlace);
+
+//assigning random dates
+let dates = ['1206 BCE','1826','1963','2024'];
+
+let randomDate = dates[getRandomInt(dates.length)];
+
+let randDateEls = document.querySelectorAll(".randDate");
+for(const randDateEl of randDateEls){
+    randDateEl.innerText = randomDate;
+}
+console.log(randomDate);
 
 
