@@ -23,7 +23,7 @@ for(const randPlaceEl of randPlaceEls){
 console.log(randomPlace);
 
 //assigning random dates
-let dates = ['1206 BCE','1826','1963','2024'];
+let dates = ['the beginning of time','1826','1963','2024'];
 
 let randomDate = dates[getRandomInt(dates.length)];
 
