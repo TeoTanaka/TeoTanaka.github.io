@@ -1,3 +1,9 @@
+body {
+    background-image: url(../backgroundImages/indexBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 hgroup{ /* centering titles */
     display: flex;
     flex-direction: column;
