@@ -1,4 +1,10 @@
 .evenSpacing {
     display:flex;
-    align-content:space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.blackBackground{
+    color-scheme: dark;
 }

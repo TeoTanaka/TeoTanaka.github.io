@@ -14,8 +14,7 @@ hgroup{ /* centering titles */
     border-radius: 30px;
     border-bottom: rgba(21, 110, 135, 0.589) 10px solid;
     border-top: rgb(7, 108, 133) 10px solid;
-    margin-left: 400px;
-    margin-right:400px;
+    width: fit-content;
 }
 
 hgroup > p {
