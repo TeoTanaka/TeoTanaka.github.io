@@ -1,3 +1,7 @@
+body {
+    margin:0;
+}
+
 .evenSpacing {
     display:flex;
     flex-direction: column;
@@ -5,6 +9,7 @@
     align-items: center;
     gap: 20px;
 }
-.blackBackground{
-    color-scheme: dark;
+.movingBackground {
+    background-color: white;
+    color:black;
 }

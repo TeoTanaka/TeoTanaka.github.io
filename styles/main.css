@@ -1,0 +1,21 @@
+h1 {
+    color:red
+
+}
+#odd_text {
+   color: firebrick;
+   font-style: italic;
+}
+.important {
+    border: 1px red solid;
+    font-weight: bolder;
+    background-color: aqua;
+}
+.random {
+    
+    border: 3px blue solid;
+    border-style: dashed;
+}
+body {
+    background-color: cadetblue;
+}

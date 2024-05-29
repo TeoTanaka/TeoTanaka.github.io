@@ -1,23 +1,49 @@
-body {
+/*<body {
     background-image: url(../backgroundImages/indexBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin:0;
 }
-
-hgroup{ /* centering titles */
+*/
+.titleSlide { /* All styles for the first slide of the website*/
+    position:fixed;
+    height:100%;
+    width:100%;
+    display:block;
+    background-image: url(../backgroundImages/indexBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
-.mainTitle {
+hgroup{ /* centering things in the hgroup and adding a border to them*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     border-radius: 30px;
     border-bottom: rgba(21, 110, 135, 0.589) 10px solid;
     border-top: rgb(7, 108, 133) 10px solid;
     width: fit-content;
 }
-
 hgroup > p {
     max-width: 40%;
     min-width: 300px;
+}
+
+.slide {
+    position:relative;
+    height:100%;
+    width:100%;
+    background-color:white;
+    z-index: 1;
+}
+
+.slide-1 {
+    top: 100vh;
+}
+
+.slide-2 {
+    top: 200vh;
 }
