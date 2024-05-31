@@ -9,7 +9,8 @@ body {
     align-items: center;
     gap: 20px;
 }
-.movingBackground {
-    background-color: white;
-    color:black;
+.navBar {
+    position:sticky;
+    z-index:top;
+    
 }
