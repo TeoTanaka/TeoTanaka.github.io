@@ -3,12 +3,6 @@
     height:100%;
     width:100%;
     display:block;
-    background-image: url(../backgroundImages/indexBackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
 }
 
 hgroup{ /* centering things in the hgroup and adding a border to them*/
@@ -26,23 +20,37 @@ hgroup > p {
 }
 
 .slide-container {
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .slide {
-    position:sticky;
     height:100vh;
     width:100vw;
     z-index: 1;
 }
 
+.slide-0 {
+    /* height:100vh; */
+    background-image: url(../backgroundImages/indexBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
 .slide-1 {
     background-color:white;
-    top: 100vh;
+    /* top: 100vh; */
 }
 
 .slide-2 {
     background-color:rgb(0, 0, 0);
-    top: 200vh;
+    /* top: 200vh; */
+}
+
+.slide-3 {
+    background-color: blue;
 }
 /* potential solution:wait until it reaches top of screen then set it to fixed*/
