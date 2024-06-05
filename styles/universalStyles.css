@@ -9,8 +9,18 @@ body {
     align-items: center;
     gap: 20px;
 }
+
 .navBar {
     position:sticky;
-    z-index:top;
-    
+    margin: 1rem;
+    padding-top:20px;
+    padding-bottom:20px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(90, 115, 54);
+}
+
+.centered {
+    align-self: center; 
+    margin: 1vh;
 }
