@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .evenSpacing {
@@ -17,30 +18,47 @@ body {
     padding-bottom:30px;
     display: flex;
     justify-content: space-around;
-    background-color:rgb(90, 115, 54);
+    background-color:rgb(146, 178, 32);
     
 }
 .navButton {
-    color:rgb(215, 242, 119);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(90, 115, 54);
     font-size:x-large;
 }
+.animated-underline::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(90, 115, 54);
+    transition: width .75s;
+  }
+  
+.animated-underline:hover::after {
+    width: 100%;
+  }
 
-.navButton:hover{
-    background-color:black;
-}
+.animated-underline:hover:after {
+    width:100%;
 
-
-@keyframes buttonHover{
-    from {
-        margin:0%;
-    }
-    to {
-        margin:100%;
-    }
 }
 
 .centered {
     align-self: center; 
     margin: 1vh;
+}
+
+a {
+    text-decoration:none;
+}
+
+.slide-container {
+    position: sticky;
+    top: 0;
+}
+
+.slide {
+    height:100vh;
+    width:100vw;
+    z-index: 1;
 }
