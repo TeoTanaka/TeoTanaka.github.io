@@ -19,17 +19,6 @@ hgroup > p {
     min-width: 300px;
 }
 
-.slide-container {
-    position: sticky;
-    top: 0;
-}
-
-.slide {
-    height:100vh;
-    width:100vw;
-    z-index: 1;
-}
-
 .slide-0 {
     /* height:100vh; */
     background-image: url(../backgroundImages/indexBackground.png);
@@ -40,16 +29,16 @@ hgroup > p {
 }
 
 .slide-1 {
-    background-color:white;
+    background-color:#456923;
     /* top: 100vh; */
 }
 
 .slide-2 {
-    background-color:rgb(0, 0, 0);
+    background-color:#9FB66E;
     /* top: 200vh; */
 }
 
 .slide-3 {
-    background-color: blue;
+    background-color: #C9E870;
 }
 /* potential solution:wait until it reaches top of screen then set it to fixed*/
