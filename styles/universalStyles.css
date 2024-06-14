@@ -68,10 +68,33 @@ a {
     height:60px;
     top:20px;
     justify-self:center;
-    background-color:rgb(92, 112, 20);
     padding:10px;
     border-left: rgba(21, 110, 135, 0.589) 1rem solid;
     border-right: rgba(21, 110, 135, 0.589) 1rem solid;
     border-radius:30px;
+}
+.slideSpacing {
+    padding-bottom: 20px;
+    display:grid;
+    justify-content:center;
+}
+.link {
+    width:fit-content;
+    height:fit-content;
+    justify-self: center;
+    background-color:rgb(146, 178, 32);
+    border-radius:4px;
+    padding:5px;
+    text-decoration: none;
+}
+.slideImage{
+    width:500px;
+    height:500px;
+    border-radius: 30px;
+    position:relative;
+    justify-self:center;
+}
+#whiteBackground {
+    background-color: white;
 }
     

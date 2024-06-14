@@ -1,11 +1,18 @@
 .wheel {
     margin-bottom:50%;
     margin-top:5%;
+    display:flex;
+    justify-content:space-around;
 }
 
 .wheel > * {
     display: none;
     left: 0;
+}
+.wheel img {
+    width:400px;
+    height:400px;
+    border-radius: 30px;
 }
 
 .wheel > .left,
@@ -40,7 +47,7 @@
         left: 0%;
     }
     to {
-        left: 50%;
+        left: 40%;
     }
 }
 @keyframes right {
@@ -48,6 +55,6 @@
         left: 50%;
     }
     to {
-        left: 100%;
+        left: 80%;
     }
 }
