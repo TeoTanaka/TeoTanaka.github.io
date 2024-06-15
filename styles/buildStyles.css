@@ -1,4 +1,4 @@
-#drag {
+.rect {
     position:absolute;
     width:100px;
     height:100px;
@@ -10,8 +10,26 @@
     justify-content: center;
     margin-bottom:20px;
 }
-.rect {
-    width:100px;
-    height:50px;
+.line {
+    position:absolute;
+    width:10px;
+    height:100px;
     background-color:blue;
+}
+.circle {
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    background-color: blue;
+}
+
+.dragzone {
+    display:flex;
+    align-items:space-evenly;
+}
+
+.dragzone {
+    display:flex;
+    justify-content: space-between;
 }

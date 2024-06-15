@@ -1,27 +1,7 @@
-let buttonBar = document.getElementById("buttonBar");
-let dragzone = document.getElementById("dragzone");
-
-let rectBtn = document.createElement("button");
-rectBtn.className = "rectBtn";
-rectBtn.innerText = "New Rectangle"
-buttonBar.appendChild(rectBtn);
-
-objects = []
-
-rectBtn.addEventListener("click",addRect);
-
-function addRect() {
-  let rect = document.createElement("div");
-  rect.className = "rect";
-  rect.id = "rect"+(objects.length);
-  dragzone.appendChild(rect);
-  objects.push(rect.id);
-  console.log(objects);
+object = ["rect1","rect2","line1","line2","circle1","circle2"];
+for (i = 0; i<=object.length;i++) {
+  dragElement(document.getElementById(object[i]));
 }
-
-
-
-
 
 
 
