@@ -97,4 +97,16 @@ a {
 #whiteBackground {
     background-color: white;
 }
-    
+hgroup{ /* centering things in the hgroup and adding a border to them*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 30px;
+    border-bottom: rgba(21, 110, 135, 0.589) 10px solid;
+    border-top: rgb(7, 108, 133) 10px solid;
+    width: fit-content;
+}
+hgroup > p {
+    max-width: 40%;
+    min-width: 300px;
+}
