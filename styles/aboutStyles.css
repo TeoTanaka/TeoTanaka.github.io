@@ -1,0 +1,49 @@
+.titleSlide { /* All styles for the first slide of the website*/
+    position:fixed;
+    height:100%;
+    width:100%;
+    display:block;
+}
+
+
+.slide-0 {
+    height:100vh;
+    background-color:white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-1 {
+    background-color:white;
+    display:grid;
+    background-color: #C9E870;
+}
+
+#imgSlide1 {
+    width:500px;
+    height:300px;
+    border-radius: 30px;
+    position:relative;
+    justify-self:center;
+}
+#darkGreen {
+    color:rgb(90, 115, 54);
+}
+
+
+.slide-2 {
+    background-color:#9FB66E;
+    /* top: 200vh; */
+}
+
+.slide-3 {
+    background-color: #C9E870;
+}
+/* potential solution:wait until it reaches top of screen then set it to fixed*/
+.centerOfPage{
+    display:grid;
+    align-content:center;
+    justify-content:center;
+    margin-top:200px;
+}

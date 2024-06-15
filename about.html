@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/aboutStyles.css" rel="stylesheet">
+    <link href="styles/universalStyles.css" rel="stylesheet">
+    <link href="styles/expandAnimation.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="slide-container slide-0">
+        <nav class = "navBar">
+            <a class = "navButton animated-underline" href = "index.html"> Home</a>
+            <a class = "navButton animated-underline" href = "gallery.html"> Gallery</a>
+            <a class = "navButton animated-underline" href = "about.html"> About</a>
+            <a class = "navButton animated-underline" href = "build.html"> Build</a>
+        </nav>
+        <div class = "centered">
+            <hgroup class="mainTitle ">
+                <h1>About <span class="randName"></span> Chairs</h1>
+                <p><span class="randPlace"></span>'s premier chair dealership since <span class="randDate"></span></p>
+            </hgroup>
+        </div>
+        <div class = "centerOfPage">
+            <img src = "backgroundImages/oldToNew.png" alt = "a throne and a hover chair" class = "expandImg"/>
+        </div>
+
+    </div>
+    <div class="slide-container">
+        <div class="slide slide-1">
+            <div class = "slideSpacing">
+                <h2 class = "slide-title">Our History</h2>
+                <img class = "expandImg" src = "chairImages/throne.png" id = "imgSlide1" alt = "a modern chair store with luzury chairs"/>
+                <p>We began as the very best, the above chair is the Mega Throne V2. Super Rare dition </p>
+            </div>
+        </div>
+    </div>
+    <div class="slide-container">
+        <div class="slide slide-2">
+            <div class = "slideSpacing">
+                <h3 class = "slide-title">Our Future</h3>
+                <img src = "chairImages/hoverChair.png" class = "slideImage expandImg"/>
+                <p>We continue to be the best, above the Hover Chair 2000</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/randText.js"></script>
+</body>
+
+</html>
