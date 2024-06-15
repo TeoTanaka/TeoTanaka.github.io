@@ -41,3 +41,11 @@
     background-color: #C9E870;
 }
 /* potential solution:wait until it reaches top of screen then set it to fixed*/
+.wheelImg:hover{
+    box-shadow: 20px 20px 20px rgb(90, 115, 54);
+    transition:box-shadow .5s ease;
+}
+.wheelImg{
+    box-shadow: none;
+    transition:box-shadow .5s ease;
+}
