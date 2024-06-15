@@ -1,4 +1,30 @@
-dragElement(document.getElementById("drag"));
+let buttonBar = document.getElementById("buttonBar");
+let dragzone = document.getElementById("dragzone");
+
+let rectBtn = document.createElement("button");
+rectBtn.className = "rectBtn";
+rectBtn.innerText = "New Rectangle"
+buttonBar.appendChild(rectBtn);
+
+objects = []
+
+rectBtn.addEventListener("click",addRect);
+
+function addRect() {
+  let rect = document.createElement("div");
+  rect.className = "rect";
+  rect.id = "rect"+(objects.length);
+  dragzone.appendChild(rect);
+  objects.push(rect.id);
+  console.log(objects);
+}
+
+
+
+
+
+
+
 
 //altered code from https://www.w3schools.com/howto/howto_js_draggable.asp
 
